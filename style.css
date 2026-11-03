@@ -29,7 +29,7 @@
 
 .card .btn {
     margin-top: auto;
-    align-self: flex-start;
+    align-self: center;
 }
 .row {
     display: grid !important;
