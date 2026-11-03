@@ -68,4 +68,8 @@ body::before {
     box-shadow: 0 12px 30px rgba(255, 255, 255, 0.18);
     z-index: 2;
 }
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
 
