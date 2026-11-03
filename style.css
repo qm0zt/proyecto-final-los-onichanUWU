@@ -6,7 +6,7 @@
 
 .card-img-top {
     height: 1000px !important;
-    min-height: 250px;
+    min-height: 400px;
     width: 100%;
     object-fit: cover;
     display: block;
