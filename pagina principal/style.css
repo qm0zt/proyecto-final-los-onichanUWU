@@ -41,4 +41,20 @@
     width: auto;
 }
 
+body {
+    position: relative;
+    background: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("67a72f605b6a1e9abb24d9b9817f5096.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    z-index: -1;
+    pointer-events: none;
+}
 
