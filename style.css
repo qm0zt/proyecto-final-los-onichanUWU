@@ -58,3 +58,14 @@ body::before {
     pointer-events: none;
 }
 
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.18);
+    z-index: 2;
+}
+
