@@ -1,0 +1,106 @@
+/* --- TARJETAS --- */
+
+/* Controla el ancho máximo de las cartas de los personajes y las centra en la pantalla */
+.card-group {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Separa un poco las dos tarjetas entre sí y redondea sus bordes */
+.card-group .card {
+    margin: 0 10px;
+    border-radius: 8px;
+    overflow: hidden; /* Evita que la foto sobresalga de los bordes redondeados */
+}
+
+/* Fija una altura uniforme para las fotos y evita que se deformen */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* --- BOTONES LATERALES --- */
+
+/* Diseña los botones con degradado rojo, tipografía, bordes de píldora y sombra */
+.side-btn {
+    background: linear-gradient(135deg, #6e0d14 0%, #3b0408 100%);
+    color: #f8d7da;
+    border: 1px solid #b81d24;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+    padding: 12px 22px;
+    border-radius: 50px; /* Da la forma ovalada/píldora */
+    box-shadow: 0 4px 12px rgba(184, 29, 36, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 10;
+    white-space: nowrap; /* Evita que el texto de los botones se baje de línea */
+    text-decoration: none; /* Saca el subrayado por ser un enlace */
+}
+
+/* Posiciona el botón izquierdo ("Volver") a un costado */
+.btn-left {
+    left: 20px;
+}
+
+/* Posiciona el botón derecho ("Siguiente") al otro costado */
+.btn-right {
+    right: 20px;
+}
+
+/* Cambia los colores y agranda ligeramente el botón cuando pasás el mouse por encima */
+.side-btn:hover {
+    background: linear-gradient(135deg, #a8131d 0%, #59060c 100%);
+    color: #ffffff;
+    border-color: #ff4d57;
+    box-shadow: 0 6px 18px rgba(220, 38, 38, 0.5);
+    transform: translateY(-50%) scale(1.06);
+}
+
+
+/* --- FONDO --- */
+
+/* Crea una capa fija detrás de todo con la imagen de fondo y le baja la opacidad */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("image copy.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25; /* Qué tan transparente se ve la imagen de fondo */
+    z-index: -1;
+    pointer-events: none; /* Hace que los clics la atraviesen sin interferir */
+}
+
+
+/* --- TÍTULOS --- */
+
+/* Aplica la tipografía Cinzel, tamaño, espaciado de letras y sombra al título principal ("Another") */
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 4px 15px rgba(184, 29, 36, 0.6);
+    margin-bottom: 5px;
+}
+
+/* Aplica la tipografía Raleway, color más suave y espaciado al subtítulo ("Personajes Principales") */
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #d1d1d1;
+    margin-top: 0;
+}

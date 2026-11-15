@@ -1,0 +1,75 @@
+.card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.img-death note{
+    object-position: top;
+}
+
+.img-another{
+    object-position: center 20%;
+}
+
+.img-cyberpunk{
+    object-position: top;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .btn {
+    margin-top: auto;
+    align-self: center;
+}
+.row {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.row > * {
+    width: auto;
+}
+
+body {
+    position: relative;
+    background: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("c5cbae36523145afb2e944a93ed12e0c.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.18);
+    z-index: 2;
+}
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+
